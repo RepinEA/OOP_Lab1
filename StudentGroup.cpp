@@ -1,4 +1,4 @@
-﻿#include "StudentGroup.h"
+#include "StudentGroup.h"
 
 Group::Group(int number)
 {
@@ -30,14 +30,14 @@ bool Group::tryToRemoveStudent(Student& student)
 	return false;
 }
 
-void Group::sortStudents(std::string sort)	
+void Group::sortStudents(sortsTypes sort)
 {
 
-	if (sort == "lex")
+	if (sort == byLexicographic)
 	{
 		std::sort(this->students.begin(), this->students.end(), []( Student* s1,  Student* s2){ return s1->getIName() < s2->getIName(); });
 	}
-	else if (sort == "marks")
+	else if (sort == byMarks)
 	{
 		std::sort(this->students.begin(), this->students.end(), [](Student* s1, Student* s2){ return s1->getMark() < s2->getMark(); });
 	}
