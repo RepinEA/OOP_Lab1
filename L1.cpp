@@ -1,4 +1,4 @@
-﻿// L1.cpp: определяет точку входа для консольного приложения.
+// L1.cpp: определяет точку входа для консольного приложения.
 //
 
 #include "stdafx.h"
@@ -32,7 +32,7 @@ int main()
 	
 	group7091.tryToRemoveStudent(Thrid);
 
-	group7091.sortStudents("lex");
+	group7091.sortStudents(byMarks);
 	vector<Group*> gr;
 	
 	for (unsigned i = 0; i < (group7091.getStudents().size()); i++)
