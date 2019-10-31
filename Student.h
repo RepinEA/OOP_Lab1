@@ -1,4 +1,3 @@
-
 #include "StudentGroup.h"
 #include <vector>
 #include <string>
