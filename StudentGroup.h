@@ -17,7 +17,7 @@ private:
 	std::vector<Student*> students;//студенты групп
 public:
 	Group(int number);//конструктор
-	std::vector<Student*> getStudents();//получить студентов группы
+	const std::vector<Student*>& getStudents();//получить студентов группы
 	bool addStudent(Student& student);//добавить студента в группу
 	int getNumber();//получить номер группы
 	bool tryToRemoveStudent(Student& student);//удалить студента из группы
