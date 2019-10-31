@@ -44,7 +44,7 @@ void Group::sortStudents(sortsTypes sort)
 
 }
 
-std::vector<Student*> Group::getStudents()
+const std::vector<Student*>& Group::getStudents()
 {
 	return this->students;
 }
