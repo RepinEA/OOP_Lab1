@@ -1,8 +1,8 @@
-﻿#include "Student.h" 
+#include "Student.h" 
 
 
 
-Student::Student(std::string fname,std::string iname,std::string oname,int mark)
+Student::Student(const std::string& fname,const std::string& iname,const std::string& oname,int mark)
 {
 	FName=fname;
 	IName=iname;
@@ -11,17 +11,17 @@ Student::Student(std::string fname,std::string iname,std::string oname,int mark)
 }
 
 
-std::string Student::getFName()
+const std::string& Student::getFName()
 {
 	return FName;
 }
 
-std::string Student::getIName()
+const std::string& Student::getIName()
 {
 	return IName;
 }
 
-std::string Student::getOName()
+const std::string& Student::getOName()
 {
 	return OName;
 }
