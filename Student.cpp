@@ -45,10 +45,10 @@ void Student::removeGroup(Group& group)
 
 int Student::getMark()
 {
-	return this->mark;
+	return mark;
 }
 
-std::vector<Group*> Student::getGroups()
+const std::vector<Group*>& Student::getGroups()
 {
 	return groups;
 }
